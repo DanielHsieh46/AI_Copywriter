@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>現代貼文生成器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1>貼文文案生成器</h1>
+        <p class="subtitle">Let AI think for you !!</p> <!-- 新增提示文字 -->
+        
+        <!-- 照片上傳 -->
+        <div class="upload-section">
+            <label for="photo-upload" id="upload-label" class="photo-preview">
+                點擊上傳圖片
+            </label>
+            <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- 下拉選單 -->
+        <div class="dropdown-section">
+            <select id="platform" class="dropdown" aria-label="選擇平台">
+                <option value="" disabled selected>選擇平台</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+            </select>
+
+            <select id="length" class="dropdown" aria-label="選擇字數">
+                <option value="" disabled selected>選擇字數</option>
+                <option value="0-5">0-5 字</option>
+                <option value="5-10">5-10 字</option>
+                <option value="10-20">10-20 字</option>
+                <option value="20-50">20-50 字</option>
+                <option value="50+">50+ 字</option>
+            </select>
+
+            <select id="style" class="dropdown" aria-label="選擇風格">
+                <option value="" disabled selected>選擇風格</option>
+                <option value="sad">悲傷</option>
+                <option value="funny">有趣</option>
+                <option value="humorous">幽默</option>
+            </select>
+        </div>
+
+        <!-- Submit 按鈕 -->
+        <button id="submit-btn" class="submit-btn">提交</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
